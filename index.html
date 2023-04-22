@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--  ============ CSS STYLE========== -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <!-- ===== ggole font ================ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,49 +19,63 @@
 </head>
 
 <body>
-    <h1>ToDo App by MAISHA MALIHA (maishamaliha.com)</h1>
+    <h1>ToDo App by Maisha Maliha(maishamaliha.com)</h1>
+    <p>
+        This website has been built using Simple Javascript, HTML and CSS.
+    </p>
     <section>
         <header>
             <span></span>
             <span></span>
         </header>
         <div class="makelist">
-            <h2>WHAT TO DO? <img src="./assets/smiling.png" alt=""></h2>
-            <form action="">
-                <input type="text" name="" placeholder="What could the title be? Hmm.. :P">
-                <textarea name="" id="" placeholder="Tell me MORE !!"></textarea>
-                <button type="submit">Let's Do This !</button>
+            <h2>WHAT TO DO? <img src="./assets/media/smiling.png" alt=""></h2>
+            <form> <!--- method="post" enctype="text/plain" action="/" -->
+                <input type="text" name="head" placeholder="What could the title be? Hmm.. :P" required>
+                <textarea name="body" placeholder="Tell me MORE !!" required></textarea>
+                <!-- USE THIS BUTTON FOR NODEJS OR BAKCEND -->
+                <!-- <button onclick="makeitem()">Let's Do This !</button>  -->
+                <a onclick="makeitem()">Let's Do This !</a>
             </form>
         </div>
     </section>
     <div class="todo_list">
-        <div class="item">
-            <div class="img"><img src="./assets/paper-clip.png" alt=""></div>
+        <!-- <div class="item">
+            <div class="img">
+                <img src="./assets/media/paper-clip.png" alt="">
+            </div>
             <h2>I need to buy Eggs</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem saepe tempore amet dolor
                 suscipit. Natus unde officiis rerum, nihil ipsam nesciunt tenetur nostrum odit rem dolorum molestiae
                 sint architecto voluptatibus?</p>
             <form>
-                <button type="submit">EDIT</button>
-                <button type="submit"><img src="./assets/party.png" alt=""></button>
+                <a>EDIT</a>
+                <a>
+                    <img src="./assets/media/party.png" alt="">
+                </a>
                 <button type="submit">DELTE</button>
             </form>
-            <div class="img"><img src="./assets/wink.png" alt="">
+            <div class="img">
+                <img src="./assets/media/wink.png" alt="">
             </div>
         </div>
         <div class="item">
-            <div class="img"><img src="./assets/binder-clip.png" alt=""></div>
+            <div class="img">
+                <img src="./assets/media/binder-clip.png" alt=""></div>
             <h2>I need to buy Eggs</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             <form>
-                <button type="submit">EDIT</button>
-                <button type="submit"><img src="./assets/party.png" alt=""></button>
+                <a>EDIT</a>
+                <a><img src="./assets/media/party.png" alt=""></a>
                 <button type="submit">DELTE</button>
             </form>
-            <div class="img"><img src="./assets/wink.png" alt="">
+            <div class="img">
+                <img src="./assets/media/wink.png" alt="">
             </div>
-        </div>
+        </div> -->
     </div>
+
+    <script src="./view/readlist.js"></script>
 </body>
 
 </html>

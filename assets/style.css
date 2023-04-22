@@ -40,6 +40,14 @@ h1{
     width: 80%;
     max-width: 600px;
 }
+body > p{
+    font-family: var(--font2);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: var(--pig-pink);
+    padding: 5px;
+}
 section{
     width: 80%;
     max-width: 500px;
@@ -65,14 +73,14 @@ span{
     background-color: var(--outer-space);
     border-radius: 50%;
 }
-button:hover{
+button:hover,a{
     cursor: pointer;
 }
 span:nth-of-type(2){
     background-color: var(--candlelight);
 }
 .makelist{
-    padding: 0.8em 2.5em;
+    padding: 0.8em 2.5em 2.5em;
 }
 .makelist h2{
     font-family: var(--font1);
@@ -120,7 +128,7 @@ input, textarea{
     box-shadow: var(--half-baked) -8px 8px;
     width: 100%;
     padding: 0.8em;
-    margin: 0.6em 0;
+    margin-bottom: 2em;
     box-sizing: border-box;
     word-wrap: break-word;
 }
@@ -133,6 +141,17 @@ input:focus{
 }
 .makelist button{
     margin: 0.7em 0 1em;
+    background-color: var(--half-baked);
+    font-size: 1.5em;
+    padding: 0.3em 0.6em;
+    border-radius: 15px;
+    border: solid 2px var(--jungle-green);
+    box-shadow: var(--astral) -8px 8px;
+    font-family: var(--font2);
+}
+/* REMOVE THIS A FOR BACKEND CODE */
+.makelist a{
+    margin:  2em 0;
     background-color: var(--half-baked);
     font-size: 1.5em;
     padding: 0.3em 0.6em;
@@ -194,27 +213,31 @@ input:focus{
     right: -10px;
     width: 60px;
 }
-.item button {
+.item button,a {
     margin: 1em 0.2em 1.8em;
     padding: 0.3em 0.6em;
     font-size: 1.4em;
     font-family: var(--font1);
     border-radius: 15px;
 }
-.item button:nth-of-type(1){
+.item a:nth-of-type(1), .item a{
     background-color: var(--candlelight);
     border: solid 2px var(--copper-rust);
     box-shadow: var(--copper-rust) -5px 5px;
 }
-.item button:nth-of-type(2){
+.item a:nth-of-type(2){
     background-color: var(--half-baked);
     border: solid 2px var(--astral);
     box-shadow: var(--astral) -5px 5px;
+    padding: 10px;
+    position: relative;
 }
-.item button img{
+.item a img{
+    position: relative;
+    top: 10px;
     width: 30px;
 }
-.item button:nth-of-type(3){
+.item button:nth-of-type(1), .item a:nth-of-type(3){
     background-color: var(--copper-rust);
     border: solid 2px var(--outer-space);
     box-shadow: var(--outer-space) -5px 5px;
