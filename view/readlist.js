@@ -7,11 +7,18 @@ function makeitem(){
     list_item.className = 'item';
     list_item.id = id;
     // ========== CLIP IMAGES
+    // first image
     let img_div = document.createElement('div');
     img_div.className = 'img';
     let clipimg = document.createElement('img');
     (id%2==0? clipimg.setAttribute('src', './assets/media/paper-clip.png'): clipimg.setAttribute('src', './assets/media/binder-clip.png'));
     img_div.appendChild(clipimg);
+    // second image
+    let img_div2 = document.createElement('div');
+    img_div2.className = 'img';
+    let clipimg2 = document.createElement('img');
+    clipimg2.setAttribute('src', './assets/media/wink.png');
+    img_div2.appendChild(clipimg2);
 
     // =========== TITLE
     let h2 = document.createElement('h2');
@@ -59,6 +66,7 @@ function makeitem(){
     list_item.appendChild(img_div);
     list_item.appendChild(h2);
     list_item.appendChild(p);
+    list_item.appendChild(img_div2);
     // TODO LIST APPEND
 
     edit_btn.addEventListener('click', ()=>{
